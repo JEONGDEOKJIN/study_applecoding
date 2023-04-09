@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- 과제 
+        open 누르면 -> alert 박스 보이고 
+        close 누르면 -> aler 박스 닫히고, 
+        함수랑 매개변수 사용해서 -->
+
+
+    <style>
+        /* 2️⃣ HTML, CSS 준비 완료 */
+        #show-box { 
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 내가 필요할 때 = 누를 때 > 준비된게 보이게 하기 -->
+    <button onclick="openAlert('block')"> 이게 누르면 튀어오르나 </button>
+
+    <button onclick="openAlert('none')"> 이건 닫기 버튼</button>
+
+
+    <!-- 1️⃣ 이걸 보여줄거야 HTML, CSS 준비 -->
+    <div id="show-box"> 알림창    </div>
+
+</body>
+
+<script> 
+
+// 길고 길고 긴 코드를 '함수' 로 만들기
+    function openAlert (state) {
+        document.getElementById('show-box').style.display = state ;
+    }
+
+
+
+</script>
+
+
+
+</html>
